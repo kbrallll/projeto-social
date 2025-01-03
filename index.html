@@ -1,30 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Redes Sociais</title>
-    <link rel="shortcut icon" href="imagens/kbrallll.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão de Apresentação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 20px;
+      width: 300px;
+    }
+    .card img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    .card h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+    .social-links a.instagram { background: #E4405F; }
+    .social-links a.instagram:hover { background: #C13584; }
+    .social-links a.youtube { background: #FF0000; }
+    .social-links a.youtube:hover { background: #CC0000; }
+    .social-links a.linkedin { background: #0077B5; }
+    .social-links a.linkedin:hover { background: #005582; }
+    .social-links a.twitter { background: #1DA1F2; }
+    .social-links a.twitter:hover { background: #0D95E8; }
+    .social-links a.facebook { background: #1877F2; }
+    .social-links a.facebook:hover { background: #145DBF; }
+  </style>
 </head>
 <body>
-    <main>
-        <h1><i>Redes Sociais</i></h1>
-        <h1><i>Marcelo Cabral</i></h1>
-        <section id="telefone">
-            <iframe src="home.html" name="tela" id="tela" frameborder="0">
-                Seu navegador não é compatível com isso.
-            </iframe>
-        </section>
-        <section id="redes-sociais">
-            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="home"></a><br>
-            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github"></a><br>
-            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"></a><br>
-            <a href="twitter.html" target="tela"><img src="imagens/logo-twitter.jpg" alt="twitter"></a><br>
-            <a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt="facebook"></a><br>
-            <a href="linkedin.html" target="tela"><img src="imagens/logo-linkedin.jpg" alt="linkedin"></a><br>
-        </section>
-    </main>
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Foto de Perfil">
+    <h1>Seu Nome</h1>
+    <p>Descrição breve ou slogan.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/" target="_blank" class="instagram">I</a>
+      <a href="https://www.youtube.com/" target="_blank" class="youtube">Y</a>
+      <a href="https://www.linkedin.com/" target="_blank" class="linkedin">L</a>
+      <a href="https://www.twitter.com/" target="_blank" class="twitter">T</a>
+      <a href="https://www.facebook.com/" target="_blank" class="facebook">F</a>
+    </div>
+  </div>
 </body>
 </html>
